@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 自定义一个Toolbar，如果不去掉默认的windowActionbar
+    会报错：This Activity already has an action bar supplied by
+    the window decor. Do not request Window.FEATURE_SUPPORT_ACTION_BAR
+    and set windowActionBar to false in your theme to use a Toolbar instead. -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:titleTextColor="#FF0000" />
+
+</RelativeLayout>
