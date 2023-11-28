@@ -13,3 +13,13 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Default ignored files
+/shelf/
+/workspace.xml
+.idea/
+/lint
+*/build
+*/lint
+*/bin
+ajcore.*
