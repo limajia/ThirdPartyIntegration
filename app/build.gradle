@@ -2,18 +2,20 @@ plugins {
     id 'com.android.application'
 }
 
+apply from: 'build_config.gradle'
 android {
     namespace 'com.docker.thirdpartyintegration'
     compileSdk 34
 
+    /*这里的重复的配置已经覆盖了之前的配置了，其他的配置会合并*/
     defaultConfig {
-        applicationId "com.docker.thirdpartyintegration"
-        minSdk 23
-        targetSdk 34
+//        applicationId "com.docker.thirdpartyintegration"
+//        minSdk 23
+//        targetSdk 34
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+//
+//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
